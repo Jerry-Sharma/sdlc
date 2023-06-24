@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>How to Create a Currency Converter in JavaScript</title>
+   <link rel="stylesheet" type="text/css" href="style.css">  
+
+</head>
+<body>
+   <!-- User Form -->
+   <div class="user-form">
+      <h1>Client Information</h1>
+      <form>
+         <label for="name">Name:</label>
+         <input type="text" id="name" required>
+         <label for="name">Address:</label>
+         <input type="text" id="address" required>
+         <label for="email">Email:</label>
+         <input type="email" id="email" required>
+         <label for="phone">Phone:</label>
+         <input type="text" id="phone">
+         <label for="message">Client Requirements:</label>
+         <textarea id="message" rows="5"></textarea>
+
+
+   <!-- Currency Converter -->
+   <h1>Currency Transactions</h1>
+   <p>Select Currency and enter Amount to convert.</p>
+   <form>
+      <label>From:</label>
+      <select id="from">
+         <option value="GBP">Pounds Sterling (GBP)</option>
+         <option value="USD">American Dollars (USD)</option>
+         <option value="EUR">Euro (EUR)</option>
+         <option value="BRL">Brazilian Real (BRL)</option>
+         <option value="JPY">Japanese Yen (JPY)</option>
+         <option value="TRY">Turkish Lira (TRY)</option>
+      </select>
+      <label>To:</label>
+      <select id="to">
+         <option value="GBP">Pounds Sterling (GBP)</option>
+         <option value="USD">American Dollars (USD)</option>
+         <option value="EUR">Euro (EUR)</option>
+         <option value="BRL">Brazilian Real (BRL)</option>
+         <option value="JPY">Japanese Yen (JPY)</option>
+         <option value="TRY">Turkish Lira (TRY)</option>
+      </select>
+      <label>Amount:</label>
+      <input type="text" id="amount" />
+      <button type="button" id="convert">Convert</button>
+   </form>
+   <div id="convertedamount" class="hidden">
+      <h2>Converted Amount</h2>
+      <div id="result"></div>
+   </div>
+   
+   <!-- Savings and Investments -->
+   <h1>Savings and Investments</h1>
+   <p>Enter the following information:</p>
+   <form id="investmentForm">
+      <label for="initialInvestment">Initial Lump Sum:</label>
+      <input type="number" id="initialInvestment" min="0" step="0.01" required>
+      <label for="monthlyInvestment">Monthly Investment:</label>
+      <input type="number" id="monthlyInvestment" min="0" step="0.01" required>
+      <label for="investmentType">Investment Type:</label>
+      <select id="investmentType">
+         <option value="1">Basic Savings Plan</option>
+         <option value="2">Savings Plan Plus</option>
+         <option value="3">Managed Stock Investments</option>
+      </select>
+      <button type="submit">Get Investment Quote</button>
+   </form>
+   <div id="investmentQuote" class="hidden">
+      <h2>Investment Quote</h2>
+      <div id="quoteResult"></div>
+   </div>
+      </form>
+   </div>
+    <div class="button-container">
+      <button type="submit" id="submitBtn">Store Information</button>
+    </div>
+   <script src="script.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>

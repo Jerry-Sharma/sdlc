@@ -1,0 +1,210 @@
+/* General Styles */
+
+/* Styles for the overall body */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+/* Styles for a container element */
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+/* Styles for heading level 1 (h1) */
+h1 {
+   color: #333;
+   margin-bottom: 10px;
+}
+
+/* Styles for paragraphs (p) */
+p {
+   color: #666;
+   margin-bottom: 10px;
+}
+
+/* Styles for labels */
+label {
+   font-weight: bold;
+   margin-right: 5px;
+}
+
+/* Styles for text input, number input, and select elements */
+input[type="text"],
+input[type="number"],
+select {
+   margin-bottom: 10px;
+   padding: 5px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   font-size: 14px;
+   box-sizing: border-box;
+   width: 100%;
+}
+
+/* Styles for input and textarea elements within a form with class "user-form" */
+.user-form input[type="text"],
+.user-form textarea {
+   width: 100%;
+   padding: 5px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+/* Styles for email input element within a form with class "user-form" */
+.user-form input[type="email"] {
+   width: 100%;
+   padding: 5px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+/* Styles for buttons */
+button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+/* Styles for button when hovered */
+button:hover {
+   background-color: #555;
+}
+
+/* Styles for heading level 3 (h3) */
+h3 {
+   color: #333;
+   margin-top: 20px;
+}
+
+/* Styles for elements with class "hidden" */
+.hidden {
+   display: none;
+}
+
+/* CSS styles for the user form */
+.user-form {
+   background-color: #f5f5f5;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+/* Styles for labels within a form with class "user-form" */
+.user-form label {
+   display: block;
+   margin-bottom: 10px;
+}
+
+/* Styles for submit button within a form with class "user-form" */
+.user-form button[type="submit"] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+/* Currency Converter Styles */
+.currency-converter {
+   margin-bottom: 20px;
+}
+
+/* Styles for form within an element with class "currency-converter" */
+.currency-converter form {
+   display: flex;
+   flex-direction: column;
+}
+
+/* Styles for labels, select, and input elements within a form with class "currency-converter" */
+.currency-converter form label,
+.currency-converter form select,
+.currency-converter form input {
+   width: auto;
+   margin: 0 0 10px;
+}
+
+/* Styles for button within an element with class "currency-converter" */
+.currency-converter form button {
+   align-self: flex-start;
+}
+
+/* Styles for element with id "result" */
+.currency-converter #result {
+   font-weight: bold;
+}
+
+/* Savings and Investments Styles */
+.savings-investments {
+   margin-bottom: 20px;
+}
+
+/* Styles for form within an element with class "savings-investments" */
+.savings-investments form {
+   display: flex;
+   flex-direction: column;
+}
+
+/* Styles for labels, select, and input elements within a form with class "savings-investments" */
+.savings-investments form label,
+.savings-investments form select,
+.savings-investments form input {
+   width: auto;
+   margin: 0 0 10px;
+}
+
+/* Styles for button within an element with class "savings-investments" */
+.savings-investments form button {
+   align-self: flex-start;
+}
+
+/* Styles for submit button when hovered */
+button[type="submit"]:hover {
+   background-color: #555;;
+}
+
+/* Styles for element with id "investmentQuote" within an element with class "savings-investments" */
+.savings-investments #investmentQuote {
+   margin-top: 20px;
+}
+
+/* Styles for heading level 2 (h2) within an element with id "investmentQuote" */
+.savings-investments #investmentQuote h2 {
+   color: #333;
+   margin-bottom: 10px;
+}
+
+/* Styles for element with id "quoteResult" within an element with class "savings-investments" */
+.savings-investments #quoteResult {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   background-color: #f7f7f7;
+}
+
+/* Styles for elements with id "result" and "quoteResult" */
+#result,
+#quoteResult {
+   margin-top: 10px;
+   border: 1px solid #ccc;
+   padding: 10px;
+   font-family: Arial, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   background-color: #f5f5f5;
+}
+
+/* Styles for a container for buttons */
+.button-container {
+   display: flex;
+   justify-content: flex-end;
+}
