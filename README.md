@@ -1,2 +1,1 @@
-# sdlc
-Currency converter and Investment planning 
+# Currency converter and Investment planning 
